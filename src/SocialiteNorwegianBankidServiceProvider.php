@@ -16,7 +16,7 @@ class SocialiteNorwegianBankidServiceProvider extends ServiceProvider
 
         $socialite = $this->app->make(Factory::class);
 
-        $socialite->extend('bankid', function () use ($socialite) {
+        $socialite->extend('norwegian-bankid', function () use ($socialite) {
             $config = config('norwegian-bankid.criipto');
 
             return $socialite->buildProvider(SocialiteNorwegianBankidProvider::class, $config);
