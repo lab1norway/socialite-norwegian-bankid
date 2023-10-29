@@ -14,5 +14,12 @@
         "psr-4": {
             "Lab1\\SocialiteNorwegianBankid\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lab1\\SocialiteNorwegianBankid\\SocialiteNorwegianBankidServiceProvider"
+            ]
+        }
     }
 }
